@@ -73,9 +73,9 @@ Tools and technologies that you learnt and used in the project.
 | :-------------: | :-------------:  | :-------------:  | :-------------:  | 
 |     Splash Screen     |    HomePage   |    Side Drawer     |     All Courses     |     
 
-| ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-35-370_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-37-411_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/SS%201.png) | ![](Screenshots%20-%20GoalTube/Screenshot%202022-02-27%20122132.jpg) |
+| ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-35-370_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-37-411_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/SS%201.png) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-13-04-96_a226cad3b95b00e4795a4053ca203fbc.jpg) |
 | :-------------: | :-------------:  | :-------------:  | :-------------:  | 
-|     Videos Grid View     |    Videos List View   |    YouTube Video    |     My Courses     |    
+|     Videos Grid View     |    Videos List View   |    YouTube Video    |     Add Playlist     |    
     
 <!-- 
 
