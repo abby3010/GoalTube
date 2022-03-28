@@ -1,5 +1,6 @@
-# GoalTube - AI platform to credible Youtube Tutorial Videos 
-
+# GoalTube - Get Certified to Watch YouTube!
+## AI platform to get credibility by watching Youtube Tutorial Videos 
+ 
 ### Team name: Coders.py
 
 ## Team members
