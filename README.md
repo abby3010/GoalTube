@@ -1,6 +1,6 @@
 # GoalTube - Get Certified to Watch YouTube!
-## AI platform to get credibility by watching Youtube Tutorial Videos 
- 
+## AI platform to get credibility by watching Youtube Tutorial Videos
+
 ### Team name: Coders.py
 
 ## Team members
@@ -33,15 +33,18 @@
 
 Tools and technologies that you learnt and used in the project.
 
-1. Dart
-2. Python
-3. Flutter
-4. Firebase
-5. Flask
-6. Pytorch
+1. Flutter (Dart)
+2. Firebase
+3. YouTube API
+4. Python Flask
+5. PyTorch
+6. Tensorflow
+7. Google Collab
+8. HTML, CSS, JS
+9. Material UI
 
 ## Project Setup
-* For this project, you will have to install latest version of Android studio and latest version of Flutter and then install Dart and Flutter plugin in Android Studio. The steps to so is:
+* For this project, you will have to install latest version of Android studio and latest version of Flutter and then install Dart and Flutter plugin in Android Studio. The steps to do so are:
   > Open Android studio -> Go to setting -> Plugins -> Seach dart and flutter -> Install and enable them -> Restart IDE.
 * Run the command flutter doctor in the terminal on Android studio to check if there are any issues. You may install the SDK command-line tool. After that, you can either connect your phone to Android Studio or run the app on the emulator.
 
@@ -54,7 +57,7 @@ Tools and technologies that you learnt and used in the project.
 * When you click view more on any course, you will be able to see the course's ratings as well as all of the videos in two different views: grid view and list view. You can watch the YouTube video in the app by clicking on the video thumbnail. After watching the videos, you can attempt the quiz and get a passing score to receive certificate.
 
 ## Flowchart
- 
+
 <img src="https://github.com/abby3010/GoalTube/blob/main/Screenshots%20-%20GoalTube/architecture.png" width="1000">
 
 
@@ -71,27 +74,16 @@ Tools and technologies that you learnt and used in the project.
 
 ## Screenshots
 | ![](Screenshots%20-%20GoalTube/WhatsApp%20Image%202022-03-26%20at%207.47.40%20AM.jpeg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-12-29-68_a226cad3b95b00e4795a4053ca203fbc.jpg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-12-59-95_a226cad3b95b00e4795a4053ca203fbc.jpg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-13-13-69_a226cad3b95b00e4795a4053ca203fbc.jpg) |
-| :-------------: | :-------------:  | :-------------:  | :-------------:  | 
-|     Splash Screen     |    HomePage   |    Side Drawer     |     All Courses     |     
+| :-------------: | :-------------:  | :-------------:  | :-------------:  |
+|     Splash Screen     |    HomePage   |    Side Drawer     |     All Courses     |
 
 | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-35-370_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-37-411_com.codingabby.goaltube.jpg) | ![](Screenshots%20-%20GoalTube/SS%201.png) | ![](Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-13-04-96_a226cad3b95b00e4795a4053ca203fbc.jpg) |
 | :-------------: | :-------------:  | :-------------:  | :-------------:  | 
-|     Videos Grid View     |    Videos List View   |    YouTube Video    |     Add Playlist     |    
-    
-<!-- 
-
-My Courses Screenshots%20-%20GoalTube/Screenshot%202022-02-27%20122132.jpg
-Videos Grid View Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-35-370_com.codingabby.goaltube.jpg
-Videos List View Screenshots%20-%20GoalTube/Screenshot_2022-03-26-01-51-37-411_com.codingabby.goaltube.jpg
-HomePage Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-12-29-68_a226cad3b95b00e4795a4053ca203fbc.jpg
-Side Drawer Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-12-59-95_a226cad3b95b00e4795a4053ca203fbc.jpg
-All Courses Screenshots%20-%20GoalTube/Screenshot_2022-03-26-07-13-13-69_a226cad3b95b00e4795a4053ca203fbc.jpg
-Splash Screen Screenshots%20-%20GoalTube/WhatsApp%20Image%202022-03-26%20at%207.47.40%20AM.jpeg
-YouTube Video Screenshots%20-%20GoalTube/SS%201.png -->
+|     Videos Grid View     |    Videos List View   |    YouTube Video    |     Add Playlist     |
 
 
 - **Admin Panel**
- 
+
 <img src="https://github.com/abby3010/GoalTube/blob/main/Screenshots%20-%20GoalTube/Screenshot%202022-03-26%20075129.png" width="1000">
 
 <img src="https://github.com/abby3010/GoalTube/blob/main/Screenshots%20-%20GoalTube/Screenshot%202022-03-26%20075227.png" width="1000">
