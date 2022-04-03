@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 ThemeData basicTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
-    //textTheme: Typography().white,
+      //textTheme: Typography().white,
       appBarTheme: AppBarTheme(brightness: Brightness.dark),
       primaryColor: Color(0xffFF0000),
       //primaryColor: Color(0xff4829b2),

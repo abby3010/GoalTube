@@ -5,7 +5,6 @@ import 'package:goaltube/models/category.dart';
 import 'package:goaltube/models/user.dart';
 import 'dart:developer' as developer;
 import 'all_courses.dart';
-import 'theme.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
@@ -70,8 +69,10 @@ class _MyPlaylistViewState extends State<MyPlaylistView>
             if (snapshot.hasData) {
               developer.log("Hey there ========");
               var course = snapshot.data;
-              var coursesList = Category().createCategoryList( course!);
-              developer.log("Hey there ========",);
+              var coursesList = Category().createCategoryList(course!);
+              developer.log(
+                "Hey there ========",
+              );
               return GridView(
                 padding: const EdgeInsets.all(8),
                 physics: const BouncingScrollPhysics(),

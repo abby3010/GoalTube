@@ -1,9 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace
-import 'package:goaltube/basicTheme.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'authentication/firebase_auth_service.dart';
 import 'components/category_list_view.dart';
 import 'components/course_detail_screen.dart';
@@ -23,7 +21,6 @@ class _HomePageState extends State<HomePage> {
   get user1 => _auth.currentUser;
   @override
   Widget build(BuildContext context) {
-    final user = Provider.of<FirebaseAuthService>(context).currentUser();
     return Container(
       color: CustomAppTheme.nearlyWhite,
       child: Scaffold(

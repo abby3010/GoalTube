@@ -224,7 +224,8 @@ class CategoryView extends StatelessWidget {
                                                     child: Text(
                                                       "view more",
                                                       style: TextStyle(
-                                                        color: CustomAppTheme.nearlyWhite,
+                                                        color: CustomAppTheme
+                                                            .nearlyWhite,
                                                       ),
                                                     ),
                                                   ),

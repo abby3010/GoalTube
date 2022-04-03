@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 import 'dart:io';
-import 'dart:typed_data';
 import 'package:goaltube/components/theme.dart';
 import 'package:goaltube/pdf/pdf_viewer.dart';
 import 'package:flutter/material.dart';
@@ -12,12 +11,11 @@ import 'package:pdf/widgets.dart' as pw;
 
 import 'package:goaltube/models/quiz_controller.dart';
 
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'theme.dart';
 
 class QuizScoreView extends StatefulWidget {
-  QuizScoreView({Key? key}) : super(key: key);
+  const QuizScoreView({Key? key}) : super(key: key);
 
   @override
   State<QuizScoreView> createState() => _QuizScoreViewState();
@@ -37,7 +35,7 @@ class _QuizScoreViewState extends State<QuizScoreView> {
     receiptFile.writeAsBytesSync(List.from(await pdf.save()));
   }
 
-  var profileImage;
+  pw.MemoryImage? profileImage;
 
   @override
   void initState() {
@@ -81,7 +79,7 @@ class _QuizScoreViewState extends State<QuizScoreView> {
                   // ),
                   pw.SizedBox(height: 3.0),
                   pw.Center(
-                    child: pw.Image(profileImage, width: 110),
+                    child: pw.Image(profileImage!, width: 110),
                   ),
                   pw.SizedBox(height: 4.0),
                   pw.Row(mainAxisAlignment: pw.MainAxisAlignment.center,
@@ -154,7 +152,7 @@ class _QuizScoreViewState extends State<QuizScoreView> {
                       // mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                       children: <pw.Widget>[
                         pw.Header(level: 1, text: 'Siign'),
-                        pw.Header(level: 1, text: 'Date: ${date}'),
+                        pw.Header(level: 1, text: 'Date: $date'),
                       ]),
                   // Write All the paragraph in one line.
                   // For clear understanding
@@ -182,7 +180,7 @@ class _QuizScoreViewState extends State<QuizScoreView> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(child: Image.asset("assets/img/trophy.png")),
+                  Image.asset("assets/img/trophy.png"),
                   Spacer(
                     flex: 1,
                   ),

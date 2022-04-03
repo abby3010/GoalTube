@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
           "/home": (context) => HomePage(),
           "/add": (context) => PlaylistForm(),
           "/onboard": (context) => OnboardingScreen(),
-          "/profile": (context) => User_Profile(),
+          "/profile": (context) => UserProfile(),
           "/myPlaylist": (context) => MyPlaylistView(),
           "/allCourses": (context) => AllCourses(),
         },

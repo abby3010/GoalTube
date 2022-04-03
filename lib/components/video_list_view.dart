@@ -135,7 +135,6 @@ class _VideosListViewState extends State<VideosListView>
               ),
             ),
           ),
-
           Padding(
             padding: const EdgeInsets.only(top: 8, right: 8),
             child: Container(
@@ -170,35 +169,34 @@ class _VideosListViewState extends State<VideosListView>
                 ),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
-                      color: CustomAppTheme
-                          .nearlyYoutubeRed
-                          .withOpacity(0.5),
+                      color: CustomAppTheme.nearlyYoutubeRed.withOpacity(0.5),
                       offset: const Offset(1.1, 1.1),
                       blurRadius: 10.0),
                 ],
               ),
               child: Center(
                   child: TextButton(
-                    child: Text(
-                      'Quiz',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18,
-                        letterSpacing: 0.0,
-                        color: CustomAppTheme.nearlyWhite,
-                      ),
-                    ),
-                    onPressed: () {
-                      moveTo();
-                    },
-                  )),
+                child: Text(
+                  'Quiz',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    letterSpacing: 0.0,
+                    color: CustomAppTheme.nearlyWhite,
+                  ),
+                ),
+                onPressed: () {
+                  moveTo();
+                },
+              )),
             ),
           ),
         ],
       ),
     );
   }
+
   void moveTo() {
     Navigator.push<dynamic>(
       context,

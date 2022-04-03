@@ -15,7 +15,7 @@ class QA extends StatelessWidget {
   Widget build(BuildContext context) {
     QuestionController _questioncont = Get.put(QuestionController());
     return SingleChildScrollView(
-      scrollDirection:Axis.vertical,
+      scrollDirection: Axis.vertical,
       child: Container(
         // padding: EdgeInsets.all(50),
         margin: EdgeInsets.all(kDefaultPadding),
