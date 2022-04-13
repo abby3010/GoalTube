@@ -101,9 +101,10 @@ class CenterNextButton extends StatelessWidget {
                             key: ValueKey('Sign Up button'),
                             onTap: () async {
                               final authServiceProvider =
-                              Provider.of<FirebaseAuthService>(context,
-                                  listen: false);
-                              await authServiceProvider.signInWithGoogle(context);
+                                  Provider.of<FirebaseAuthService>(context,
+                                      listen: false);
+                              await authServiceProvider
+                                  .signInWithGoogle(context);
                             },
                             child: Padding(
                               padding: EdgeInsets.only(left: 16.0, right: 16.0),
@@ -145,9 +146,7 @@ class CenterNextButton extends StatelessWidget {
               position: _loginTextMoveAnimation,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-
-                ],
+                children: const [],
               ),
             ),
           ),

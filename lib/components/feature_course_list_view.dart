@@ -229,8 +229,9 @@ class CategoryView extends StatelessWidget {
                             borderRadius:
                                 const BorderRadius.all(Radius.circular(16.0)),
                             child: AspectRatio(
-                                aspectRatio: 1.28,
-                                child: Image.asset(category!.imagePath),),
+                              aspectRatio: 1.28,
+                              child: Image.asset(category!.imagePath),
+                            ),
                           ),
                         ),
                       ),

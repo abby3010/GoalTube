@@ -1,5 +1,6 @@
 import '../models/user.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -80,10 +81,14 @@ class FirebaseAuthService implements AuthService {
       "name": user.displayName,
       "email": user.email,
       "photoUrl": user.photoURL,
-      "uid" : user.uid,
-      "phone" : user.phoneNumber,
-      "courses" : []
-    }).catchError((error) => print("Failed to add user: $error"));
+      "uid": user.uid,
+      "phone": user.phoneNumber,
+      "courses": []
+    }).catchError((error) {
+      if (kDebugMode) {
+        print("Failed to add user: $error");
+      }
+    });
   }
 
   @override

@@ -11,8 +11,8 @@ class ShowCertificateScreen extends StatefulWidget {
   _ShowCertificateScreenState createState() => _ShowCertificateScreenState();
 }
 
-class _ShowCertificateScreenState extends State<ShowCertificateScreen> with WidgetsBindingObserver {
-
+class _ShowCertificateScreenState extends State<ShowCertificateScreen>
+    with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     final file = File(widget.path!);

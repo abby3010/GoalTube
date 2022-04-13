@@ -4,6 +4,7 @@ import 'package:goaltube/authentication/firebase_auth_service.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import 'package:provider/provider.dart';
@@ -25,6 +26,7 @@ class _PlaylistFormState extends State<PlaylistForm> {
   TextEditingController course_category = TextEditingController();
   final formKey = GlobalKey<FormState>();
 
+  @override
   Widget build(BuildContext context) {
     final user = Provider.of<FirebaseAuthService>(context).currentUser();
     return Scaffold(
@@ -120,6 +122,7 @@ class _PlaylistFormState extends State<PlaylistForm> {
                           r'^https?:\/\/(www.youtube.com|youtube.com|youtu.be)(.*)$'))) {
                         return 'Enter Valid url';
                       }
+                      return null;
                     }),
               ),
               SizedBox(
@@ -197,7 +200,11 @@ class _PlaylistFormState extends State<PlaylistForm> {
                         });
                       });
                     }).catchError(
-                            (error) => print("Failed to add document: $error"));
+                            (error) {
+                              if (kDebugMode) {
+                                print("Failed to add document: $error");
+                              }
+                            });
                   }
                 },
                 child: AnimatedContainer(

@@ -104,7 +104,6 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         _animationController!.value <= 0.6) {
       _animationController?.animateTo(0.8);
     } else if (_animationController!.value > 0.6 &&
-        _animationController!.value <= 0.8) {
-    }
+        _animationController!.value <= 0.8) {}
   }
 }

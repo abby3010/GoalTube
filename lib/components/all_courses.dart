@@ -13,8 +13,7 @@ class AllCourses extends StatefulWidget {
   _AllCoursesState createState() => _AllCoursesState();
 }
 
-class _AllCoursesState extends State<AllCourses>
-    with TickerProviderStateMixin {
+class _AllCoursesState extends State<AllCourses> with TickerProviderStateMixin {
   AnimationController? animationController;
   @override
   void initState() {
@@ -62,10 +61,10 @@ class _AllCoursesState extends State<AllCourses>
                 scrollDirection: Axis.vertical,
                 children: List<Widget>.generate(
                   Category.popularCourseList.length,
-                      (int index) {
+                  (int index) {
                     final int count = Category.popularCourseList.length;
                     final Animation<double> animation =
-                    Tween<double>(begin: 0.0, end: 1.0).animate(
+                        Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                         parent: animationController!,
                         curve: Interval((1 / count) * index, 1.0,
@@ -99,10 +98,10 @@ class _AllCoursesState extends State<AllCourses>
 class CategoryView extends StatelessWidget {
   const CategoryView(
       {Key? key,
-        this.category,
-        this.animationController,
-        this.animation,
-        this.callback})
+      this.category,
+      this.animationController,
+      this.animation,
+      this.callback})
       : super(key: key);
 
   final VoidCallback? callback;
@@ -157,7 +156,7 @@ class CategoryView extends StatelessWidget {
                                                 fontSize: 16,
                                                 letterSpacing: 0.27,
                                                 color:
-                                                CustomAppTheme.darkerText,
+                                                    CustomAppTheme.darkerText,
                                               ),
                                             ),
                                           ),
@@ -169,10 +168,10 @@ class CategoryView extends StatelessWidget {
                                                 bottom: 8),
                                             child: Row(
                                               mainAxisAlignment:
-                                              MainAxisAlignment
-                                                  .spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                                  CrossAxisAlignment.center,
                                               children: <Widget>[
                                                 Text(
                                                   '${category!.lessonCount} lesson',
@@ -190,10 +189,10 @@ class CategoryView extends StatelessWidget {
                                                       Text(
                                                         '${category!.rating}',
                                                         textAlign:
-                                                        TextAlign.left,
+                                                            TextAlign.left,
                                                         style: TextStyle(
                                                           fontWeight:
-                                                          FontWeight.w200,
+                                                              FontWeight.w200,
                                                           fontSize: 18,
                                                           letterSpacing: 0.27,
                                                           color: CustomAppTheme
@@ -232,11 +231,11 @@ class CategoryView extends StatelessWidget {
                     Container(
                       child: Padding(
                         padding:
-                        const EdgeInsets.only(top: 24, right: 16, left: 16),
+                            const EdgeInsets.only(top: 24, right: 16, left: 16),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius:
-                            const BorderRadius.all(Radius.circular(16.0)),
+                                const BorderRadius.all(Radius.circular(16.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
                                   color: CustomAppTheme.grey.withOpacity(0.2),
@@ -246,10 +245,11 @@ class CategoryView extends StatelessWidget {
                           ),
                           child: ClipRRect(
                             borderRadius:
-                            const BorderRadius.all(Radius.circular(16.0)),
+                                const BorderRadius.all(Radius.circular(16.0)),
                             child: AspectRatio(
                               aspectRatio: 1.28,
-                              child: Image.asset(category!.imagePath),),
+                              child: Image.asset(category!.imagePath),
+                            ),
                           ),
                         ),
                       ),
